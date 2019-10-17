@@ -12,7 +12,6 @@
   <artifactId>test-cloud-server-provider</artifactId>
 
   <dependencies>
-
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
