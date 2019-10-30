@@ -23,7 +23,9 @@ public class TestClient {
 
   @Test
   public void test() {
-    test.test("abc");
+    for (int i = 0; i < 10; i++) {
+      test.test("abc");
+    }
   }
 
 }
