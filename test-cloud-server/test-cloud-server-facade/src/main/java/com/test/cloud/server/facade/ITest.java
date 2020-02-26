@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "provider")
 public interface ITest {
 
+
   @RequestMapping(value = "/hello", method = RequestMethod.POST)
   void test(@RequestBody String name);
 

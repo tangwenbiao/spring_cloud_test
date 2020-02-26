@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Import;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author: TangFenQi
@@ -20,6 +21,7 @@ import org.springframework.context.annotation.Import;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients({"com.test.cloud.server.facade"})
+@EnableSwagger2
 public class SpringClientConfiguration {
 
   public static void main(String[] args) {
@@ -30,5 +32,7 @@ public class SpringClientConfiguration {
   public IRule feignRule() {
     return new RandomRule();
   }
+
+
 
 }

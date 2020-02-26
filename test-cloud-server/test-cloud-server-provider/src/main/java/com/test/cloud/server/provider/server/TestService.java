@@ -21,6 +21,6 @@ public class TestService implements ITest {
   @RequestMapping(value = "/hello", method = RequestMethod.POST)
   @Override
   public void test(@RequestBody String name) {
-    log.info("hi !! {} (provider2)", name);
+    log.info("hi !! {} (provider)", name);
   }
 }
